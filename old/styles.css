@@ -1,5 +1,5 @@
 body {
-  text-align: justify;
+  text-align: center;
   color: #26577C;
   background-color: #F3F1E6;
   margin: auto;
@@ -25,50 +25,11 @@ p {
   text-align: left;
 } */
 
-.my-bg-dark {
-  background-color: #26577C;
-}
-
-.my-bg-light {
-  background-color: #F3F1E6;
-}
-
-.bg-white {
-  background-color: white;
-}
-
-.txt-dark {
-  color: #26577C;
-}
-
-.txt-light {
-  color: #F3F1E6;
-}
-
-.my-heading-one {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.my-para-control {
-  width: 90%;
-  margin: auto;
-}
-
 .my-width-control {
   width: 1500px;
   padding-left: 2%;
   padding-right: 2%;
   margin: auto;
-}
-
-.extra-section-control {
-  padding: 0 7% 0 7%;
-}
-
-.focus-text-box {
-  border-radius: 25px;
-  padding: 10px 25px 10px 25px;
 }
 
 .p-small-heading {
@@ -96,7 +57,6 @@ p {
   width: 100%;
 } */
 .banner {
-  text-align: center;
   position: -webkit-sticky;
   /* Safari */
   position: sticky;
@@ -357,8 +317,8 @@ p {
 }
 
 .loc-desc-box-bg-inside {
-  position: relative;
-  bottom: 50px;
+  position: fixed;
+  bottom: 120px;
 
   /* color: #F3F1E6; */
   background-image: linear-gradient(to top, rgba(243, 241, 230, 0.9), rgba(243, 241, 230, 0.9));
@@ -531,7 +491,6 @@ p {
 } */
 
 .foot-section {
-  text-align: center;
   width: 100%;
   background-color: #F3F1E6;
   padding: 20px 0 20px 0;
@@ -605,8 +564,8 @@ p {
     /* 100%?? */
     width: 800px;
     max-width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
   }
 
   .landing-page-section {
@@ -662,8 +621,8 @@ p {
 
   .my-width-control {
    width: 100%;
-   padding-left: 4%;
-   padding-right: 4%;
+   padding-left: 1%;
+   padding-right: 1%;
  }
 
   /*
