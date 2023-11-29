@@ -45,6 +45,11 @@ p {
   color: #F3F1E6;
 }
 
+.list-dot {
+  font-size: 17px;
+  margin-right: 7px;
+}
+
 .my-heading-one {
   font-size: 2rem;
   font-weight: bold;
