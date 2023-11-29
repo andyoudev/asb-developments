@@ -46,9 +46,12 @@ p {
 }
 
 .list-dot {
-  color: #26577C;
-  font-size: 17px;
-  margin-right: 7px;
+ height: 10px;
+ width: 10px;
+ background-color: #26577C;
+ border-radius: 50%;
+ display: inline-block;
+ margin-right: 7px;
 }
 
 .my-heading-one {
@@ -682,7 +685,8 @@ p {
  }
 
  .list-dot {
-   font-size: 8px;
+   height: 6px;
+   width: 6px;
  }
 
   /*
