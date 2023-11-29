@@ -46,6 +46,7 @@ p {
 }
 
 .list-dot {
+  color: #26577C;
   font-size: 17px;
   margin-right: 7px;
 }
@@ -673,6 +674,10 @@ p {
    width: 100%;
    padding-left: 6%;
    padding-right: 6%;
+ }
+
+ .list-dot {
+   font-size: 10px;
  }
 
   /*
