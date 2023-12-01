@@ -5,10 +5,13 @@ body {
   margin: auto;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
+
 }
 
 section {
   padding: 70px 0 70px 0;
+
 }
 
 h1 {
@@ -53,6 +56,38 @@ p {
  display: inline-block;
  margin-right: 7px;
 }
+
+/* --------------------- Animations -------------------------*/
+
+.anim-one {
+  /* font-size: 3rem;
+  color: red; */
+  width: 100%;
+  opacity: 0;
+  transform: translateY(60%);
+  transition: all 0.5s ease-out;
+}
+
+.active-one {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.anim-two {
+  /* font-size: 3rem;
+  color: red;
+  width: 300px; */
+  opacity: 0;
+  transform: translateX(50%);
+  transition: all 0.5s ease-out;
+}
+
+.active-two {
+  /* color: blue; */
+  opacity: 1;
+  transform: translateX(0);
+}
+/* ----------------------------------------------------------*/
 
 .my-heading-one {
   font-size: 2rem;
