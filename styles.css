@@ -50,7 +50,7 @@ p {
 
 .txt-accent {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   letter-spacing: 2px;
   color: #ED7D31;
   font-weight: bold;
@@ -71,13 +71,43 @@ p {
 
 /* --------------------- Animations -------------------------*/
 
+.anim-land {
+  /* font-size: 3rem;
+  color: red;
+  width: 300px; */
+  opacity: 0;
+  transform: translateX(40%);
+  transition: all 0.7s ease-out;
+}
+
+.active-land {
+  /* color: blue; */
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.anim-land-mob {
+  /* font-size: 3rem;
+  color: red;
+  width: 300px; */
+  opacity: 0;
+  transform: translateX(40%);
+  transition: all 0.7s ease-out;
+}
+
+.active-land-mob {
+  /* color: blue; */
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .anim-one {
   /* font-size: 3rem;
   color: red; */
   width: 100%;
   opacity: 0;
   transform: translateY(60%);
-  transition: all 0.5s ease-out;
+  transition: all 0.7s ease-out;
 }
 
 .active-one {
@@ -91,13 +121,27 @@ p {
   width: 300px; */
   opacity: 0;
   transform: translateX(50%);
-  transition: all 0.5s ease-out;
+  transition: all 0.7s ease-out;
 }
 
 .active-two {
   /* color: blue; */
   opacity: 1;
   transform: translateX(0);
+}
+
+.anim-three {
+  /* font-size: 3rem;
+  color: red; */
+  width: 100%;
+  opacity: 0;
+  transform: translateY(150%);
+  transition: all 0.6s ease-out;
+}
+
+.active-three {
+  opacity: 1;
+  transform: translateY(0);
 }
 /* ----------------------------------------------------------*/
 
@@ -117,6 +161,8 @@ p {
   padding-right: 2%;
   margin: auto;
   overflow-x: hidden;
+  overflow-y: hidden;
+
 }
 
 .extra-section-control {
@@ -176,6 +222,7 @@ p {
 
 .top-bar-anim {
   height: 60px;
+  background-image: linear-gradient(to top, rgba(253, 250, 246, 1), rgba(253, 250, 246, 1));
 }
 
 .title-div {
@@ -426,15 +473,20 @@ p {
 
 .loc-desc-box-bg-inside {
   position: relative;
-  bottom: 50px;
+  bottom: 40px;
 
   /* color: #F3F1E6; */
-  background-image: linear-gradient(to top, rgba(253, 250, 246, 0.9), rgba(253, 250, 246, 0.9));
+  background-color: white;
+  /* background-image: linear-gradient(to top, rgba(253, 250, 246, 0.9), rgba(253, 250, 246, 0.9)); */
   text-align: left;
   padding: 40px 100px 40px 60px;
 }
 
 #cntr-scn-txt {
+  display: none;
+}
+
+#cap-arb-mob {
   display: none;
 }
 
@@ -654,6 +706,10 @@ p {
     padding-right: 2%;
   }
 
+  .loc-desc-box-bg-inside {
+    bottom: 60px;
+  }
+
 
 }
 
@@ -667,6 +723,9 @@ p {
     padding-right: 2%;
   }
 
+  .loc-desc-box-bg-inside {
+    bottom: 100px;
+  }
 
 }
 
@@ -709,7 +768,8 @@ p {
     width: 500px;
     max-width: 90%;
     /* color: #F3F1E6; */
-    background-image: linear-gradient(to top, rgba(243, 241, 230, 0.9), rgba(243, 241, 230, 0.9));
+    background-color: white;
+    /* background-image: linear-gradient(to top, rgba(243, 241, 230, 0.9), rgba(243, 241, 230, 0.9)); */
     text-align: center;
     padding: 40px 60px 40px 60px;
     /* margin: auto; */
@@ -775,14 +835,32 @@ p {
 
   .loc-desc-box-bg-inside-mob {
     position: absolute;
-    bottom: 130px;
-    width: 88%;
-    border-radius: 25px;
+    bottom: 100px;
+    width: 100%;
+    max-width: 100%;
+    /* border-radius: 25px; */
     padding: 40px 50px 40px 50px;
+    text-align: left;
     margin: auto;
   }
 
+  .my-indent-one {
+    margin-left: 0;
+  }
 
+  .focus-text-box {
+    border-radius: 0;
+    padding: 10px 25px 10px 25px;
+  }
+
+  /* #cap-arb-desk {
+    display: none;
+  } */
+
+  /* #cap-arb-mob {
+    display: initial;
+    background-color: white;
+  } */
   .footer {
     padding: 0 35px 0 35px;
   }
