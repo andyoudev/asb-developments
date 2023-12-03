@@ -59,9 +59,6 @@ elements.forEach(element => {
 const landingAnim = document.querySelector('.anim-land');
 landingAnim.classList.add('active-land');
 
-const landingAnimMob = document.querySelector('.anim-land-mob');
-landingAnimMob.classList.add('active-land-mob');
-
 // $(document).ready(function(){
 //
 // });
