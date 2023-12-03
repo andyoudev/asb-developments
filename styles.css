@@ -816,6 +816,12 @@ p {
    margin-bottom: 2px;
  }
 
+  .main-landing {
+    height: 620px;
+    background-image: url("images/asb-landing-img-mob-1125px.jpg");
+    background-size: 580px auto;
+    margin-top: -180px;
+  }
   /*
   .landing-page-section {
     height: 620px;
