@@ -72,11 +72,12 @@ p {
 /* --------------------- Animations -------------------------*/
 
 .hidden-trigger-one {
-  position: fixed;
+  position: absolute;
   /* width: 5px;
   height: 5px;
-  left: 0; */
-  bottom: calc(100vh + 20px);
+  left: 0;
+  background-color: red; */
+  bottom: calc(0vh - 50px);
   /* bottom: -moz-calc(100vh + 20px);
   bottom: -webkit-calc(100vh + 20px);
   bottom: -o-calc(100vh + 20px); */
