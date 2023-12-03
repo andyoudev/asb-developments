@@ -29,6 +29,7 @@ const myCallback = (entries) => {
           banner.classList.add('top-bar-anim');
           const bannerLogo = document.querySelector('.logo-img-landing');
           bannerLogo.classList.add('logo-anim');
+          // console.log(window.pageYOffset);
       }
     } else {
       // if(entry.target.classList.contains('anim-one')) {
@@ -37,10 +38,10 @@ const myCallback = (entries) => {
       // if(entry.target.classList.contains('anim-two')) {
       //     entry.target.classList.remove('active-two');
       // }
-      // if(entry.target.classList.contains('anim-three')) {
-      //     entry.target.classList.remove('active-three');
-      // }
-      if(entry.target.classList.contains('banner-anim-trigger') && ((window.innerWidth >= 1000 && window.pageYOffset <= 100) || (window.innerWidth <= 1000 && window.pageYOffset <= 280))) {
+      if(entry.target.classList.contains('anim-three')) {
+          entry.target.classList.remove('active-three');
+      }
+      if(entry.target.classList.contains('banner-anim-trigger') && ((window.innerWidth >= 1000 && window.pageYOffset <= 100) || (window.innerWidth <= 1000 && window.pageYOffset <= 480))) {
           const banner = document.querySelector('.wand-sticky-top-bar');
           banner.classList.remove('top-bar-anim');
           const bannerLogo = document.querySelector('.logo-img-landing');

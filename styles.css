@@ -73,15 +73,15 @@ p {
 
 .hidden-trigger-one {
   position: fixed;
-  width: 5px;
+  /* width: 5px;
   height: 5px;
-  left: 0;
+  left: 0; */
   bottom: calc(100vh + 20px);
-  bottom: -moz-calc(100vh + 20px);
+  /* bottom: -moz-calc(100vh + 20px);
   bottom: -webkit-calc(100vh + 20px);
-  bottom: -o-calc(100vh + 20px);
+  bottom: -o-calc(100vh + 20px); */
   z-index: 11;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .anim-land {
@@ -99,27 +99,12 @@ p {
   transform: translateX(0);
 }
 
-.anim-land-mob {
-  /* font-size: 3rem;
-  color: red;
-  width: 300px; */
-  opacity: 0;
-  transform: translateX(40%);
-  transition: all 0.7s ease-out;
-}
-
-.active-land-mob {
-  /* color: blue; */
-  opacity: 1;
-  transform: translateX(0);
-}
-
 .anim-one {
   /* font-size: 3rem;
   color: red; */
   width: 100%;
   opacity: 0;
-  transform: translateY(60%);
+  transform: translateY(50%);
   transition: all 0.7s ease-out;
 }
 
@@ -824,7 +809,7 @@ p {
  }
 
   .main-landing {
-    height: 620px;
+    height: 820px;
     background-image: url("images/asb-landing-img-mob-1125px.jpg");
     background-size: 580px auto;
     margin-top: -150px;
