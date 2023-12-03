@@ -809,10 +809,10 @@ p {
  }
 
   .main-landing {
-    height: 820px;
+    height: 800px;
     background-image: url("images/asb-landing-img-mob-1125px.jpg");
     background-size: 580px auto;
-    margin-top: -150px;
+    margin-top: -200px;
   }
   /*
   .landing-page-section {
