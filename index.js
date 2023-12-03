@@ -46,6 +46,25 @@ const myCallback = (entries) => {
           banner.classList.remove('top-bar-anim');
           const bannerLogo = document.querySelector('.logo-img-landing');
           bannerLogo.classList.remove('logo-anim');
+          const allOnes = document.querySelectorAll('.anim-one');
+          if(allOnes) {
+            allOnes.forEach(one => {
+              one.classList.remove('active-one');
+            });
+          }
+          const allTwos = document.querySelectorAll('.anim-two');
+          if(allTwos) {
+            allTwos.forEach(two => {
+              two.classList.remove('active-two');
+            });
+          }
+          const allThrees = document.querySelectorAll('.anim-three');
+          if(allThrees) {
+            allThrees.forEach(three => {
+              three.classList.remove('active-three');
+            });
+          }
+
       }
     }
   });
