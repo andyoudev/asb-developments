@@ -73,8 +73,15 @@ p {
 
 .hidden-trigger-one {
   position: fixed;
+  width: 5px;
+  height: 5px;
+  left: 0;
   bottom: calc(100vh + 20px);
+  bottom: -moz-calc(100vh + 20px);
+  bottom: -webkit-calc(100vh + 20px);
+  bottom: -o-calc(100vh + 20px);
   z-index: 11;
+  opacity: 0;
 }
 
 .anim-land {
