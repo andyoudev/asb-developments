@@ -44,7 +44,7 @@ const myCallback = (entries) => {
       // if(entry.target.classList.contains('anim-three')) {
       //     entry.target.classList.remove('active-three');
       // }
-      if(entry.target.classList.contains('banner-anim-trigger') && ((window.innerWidth >= 1000 && window.pageYOffset <= 100) || (window.innerWidth <= 1000 && window.pageYOffset <= 480))) {
+      if(entry.target.classList.contains('banner-anim-trigger') && ((window.innerWidth >= 1000 && window.pageYOffset <= 100) || (window.innerWidth <= 1000 && window.pageYOffset <= 400))) {
           const banner = document.querySelector('.wand-sticky-top-bar');
           banner.classList.remove('top-bar-anim');
           const bannerLogo = document.querySelector('.logo-img-landing');
@@ -67,6 +67,12 @@ const myCallback = (entries) => {
               three.classList.remove('active-three');
             });
           }
+          const allDecoImgs = document.querySelectorAll('.deco-img');
+          if(allDecoImgs) {
+            allDecoImgs.forEach(img => {
+              img.classList.remove('active-img');
+            });
+          }
 
       }
     }
@@ -81,6 +87,9 @@ elements.forEach(element => {
 
 const landingAnim = document.querySelector('.anim-land');
 landingAnim.classList.add('active-land');
+
+const mobLandingAnim = document.querySelector('.mob-anim-land');
+mobLandingAnim.classList.add('mob-active-land');
 
 // $(document).ready(function(){
 //

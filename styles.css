@@ -100,6 +100,20 @@ p {
   transform: translateX(0);
 }
 
+.mob-anim-land {
+  /* font-size: 3rem;
+  color: red; */
+  width: 100%;
+  opacity: 0;
+  transform: translateY(70%);
+  transition: all 0.7s ease-out;
+}
+
+.mob-active-land {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .anim-one {
   /* font-size: 3rem;
   color: red; */
@@ -143,10 +157,6 @@ p {
   transform: translateY(0);
 }
 
-.active-img {
-  width: 100%;
-  /* transform: scale(1); */
-}
 /* ----------------------------------------------------------*/
 
 .my-heading-one {
@@ -179,18 +189,35 @@ p {
 }
 
 .deco-img-section {
-  padding: 0;
-}
-
-.deco-img-div-wrapper {
   width: 100%;
+  height: 400px;
+  padding: 0;
   overflow: hidden;
 }
 
+.deco-img-div-holder-1 {
+  width: auto;
+  height: 400px;
+  background-image: url("images/lux-hotel-img-1.jpeg");
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.deco-img-div-holder-2 {
+  width: auto;
+  height: 400px;
+  background-image: url("images/lux-villa-img-1.jpeg");
+  background-position: center bottom;
+  background-size: cover;
+}
+
 .deco-img {
-  width: 100%;
-  /* transform: scale(1.2); */
-  transition: all 0.5s ease-out;
+  transition: all 0.8s ease-out;
+  transform: scale(1);
+}
+
+.active-img {
+  transform: scale(1.15);
 }
 
 .p-small-heading {
@@ -264,6 +291,10 @@ p {
 /* .title-h1 {
   font-size: 1.4rem;
 } */
+
+#mob-view-landing-text-box {
+  display: none;
+}
 
 .logo-img-landing {
   /* margin-top: 15px; */
@@ -877,10 +908,11 @@ text-align: center;
  }
 
   .main-landing {
-    height: 800px;
+    height: 700px;
     background-image: url("images/asb-landing-img-mob-1125px.jpg");
     background-size: 580px auto;
-    margin-top: -200px;
+    /* background-position: bottom; */
+    margin-top: -300px;
   }
   /*
   .landing-page-section {
@@ -906,6 +938,15 @@ text-align: center;
     font-size: 2.3rem;
   }
 
+  #landscape-view-landing-text-box {
+    display: none;
+  }
+
+  #mob-view-landing-text-box {
+    display: initial;
+    height: auto;
+  }
+
   .landing-intro-box {
     width: 100%;
     max-width: 100%;
@@ -923,6 +964,18 @@ text-align: center;
   .focus-text-box {
     border-radius: 0;
     padding: 10px 25px 10px 25px;
+  }
+
+  .hotel-icon-img {
+    width: 100px;
+  }
+
+  .apart-icon-img {
+    width: 70px;
+  }
+
+  .lg-icon-text {
+    font-size: 0.8rem;
   }
 
   .contact-headings {
