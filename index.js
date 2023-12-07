@@ -24,6 +24,9 @@ const myCallback = (entries) => {
       if(entry.target.classList.contains('anim-three')) {
           entry.target.classList.add('active-three');
       }
+      if(entry.target.classList.contains('deco-img')) {
+          entry.target.classList.add('active-img');
+      }
       if(entry.target.classList.contains('banner-anim-trigger')) {
           const banner = document.querySelector('.wand-sticky-top-bar');
           banner.classList.add('top-bar-anim');
