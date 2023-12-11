@@ -36,6 +36,10 @@ p {
   background-color: #FDFAF6;
 }
 
+.my-bg-accent {
+  background-color: #ED7D31;
+}
+
 .bg-white {
   background-color: white;
 }
@@ -73,16 +77,13 @@ p {
 
 .hidden-trigger-one {
   position: absolute;
-  /* width: 5px;
-  height: 5px;
-  left: 0;
-  background-color: red; */
-  bottom: calc(0vh - 50px);
-  /* bottom: -moz-calc(100vh + 20px);
-  bottom: -webkit-calc(100vh + 20px);
-  bottom: -o-calc(100vh + 20px); */
+  width: 10px;
+  height: 10px;
+  bottom: calc(1vh - 50px);
+  background-color: red;
+
   z-index: 11;
-  /* opacity: 0; */
+
 }
 
 .anim-land {
@@ -170,7 +171,7 @@ p {
 }
 
 .my-width-control {
-  width: 1500px;
+  width: 1400px;
   padding-left: 2%;
   padding-right: 2%;
   margin: auto;
@@ -189,35 +190,51 @@ p {
 }
 
 .deco-img-section {
+  /* position: relative; */
   width: 100%;
-  height: 400px;
+  height: 500px;
   padding: 0;
   overflow: hidden;
 }
 
+.deco-img-boundary {
+  width: 100%;
+  overflow: hidden;
+}
+
 .deco-img-div-holder-1 {
-  width: auto;
+  width: 100%;
   height: 400px;
   background-image: url("images/lux-hotel-img-1.jpeg");
   background-position: center bottom;
-  background-size: cover;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .deco-img-div-holder-2 {
-  width: auto;
-  height: 400px;
+  width: 100%;
+  height: 500px;
   background-image: url("images/lux-villa-img-1.jpeg");
-  background-position: center bottom;
-  background-size: cover;
+  background-position: center top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .deco-img {
-  transition: all 0.8s ease-out;
+  transition: all 1s ease-out;
   transform: scale(1);
 }
 
 .active-img {
-  transform: scale(1.15);
+  transform: scale(1.1);
+}
+
+#mob-photo-1 {
+  display: none;
+}
+
+#mob-photo-2 {
+  display: none;
 }
 
 .p-small-heading {
@@ -360,6 +377,10 @@ p {
   bottom: 0;
   text-align: left;
   padding: 40px 100px 40px 60px;
+}
+
+.mob-view-landing-section {
+  padding: 0px;
 }
 
 
@@ -852,6 +873,41 @@ text-align: center;
     background-size: 1125px auto;
 
   }
+
+  #desktop-photo-1 {
+    display: none;
+  }
+
+  #desktop-photo-2 {
+    display: none;
+  }
+
+  #mob-photo-1 {
+    display: initial;
+  }
+
+  #mob-photo-2 {
+    display: initial;
+  }
+
+  .deco-img-section {
+    height: 600px;
+  }
+
+  .mob-deco-img-boundary {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .deco-img-div-holder-2 {
+    height: 600px;
+    background-position: center center;
+  }
+
+  .deco-img-div-holder-2 {
+    height: 500px;
+  }
   /* #half-scn-txt {
     display: none;
   }
@@ -870,8 +926,10 @@ text-align: center;
     width: 500px;
     max-width: 90%;
     text-align: center;
-    right: calc(50vw - 250px);
+    right: calc(49.25vw - 250px);
     margin: auto;
+    padding: 40px 60px 40px 60px;
+
   }
 
 }
@@ -914,6 +972,22 @@ text-align: center;
     /* background-position: bottom; */
     margin-top: -300px;
   }
+
+  .deco-img-section {
+    height: 400px;
+  }
+
+  .deco-img-div-holder-2 {
+    height: 400px;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .deco-img-div-holder-1 {
+    height: 400px;
+    background-size: cover;
+    background-position: center bottom;
+  }
   /*
   .landing-page-section {
     height: 620px;
@@ -945,6 +1019,10 @@ text-align: center;
   #mob-view-landing-text-box {
     display: initial;
     height: auto;
+  }
+
+  .mob-view-landing-section {
+    padding: 70px 0 70px 0;
   }
 
   .landing-intro-box {
