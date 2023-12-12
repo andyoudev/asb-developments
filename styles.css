@@ -77,13 +77,20 @@ p {
 
 .hidden-trigger-one {
   position: absolute;
-  width: 10px;
-  height: 10px;
-  bottom: calc(1vh - 50px);
-  background-color: red;
-
+  width: 1px;
+  height: 1px;
+  bottom: calc(1vh - 100px);
+  /* background-color: red; */
   z-index: 11;
+}
 
+.hidden-trigger-two {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  bottom: calc(1vh - 50px);
+  /* background-color: blue; */
+  z-index: 11;
 }
 
 .anim-land {
@@ -205,8 +212,8 @@ p {
 .deco-img-div-holder-1 {
   width: 100%;
   height: 400px;
-  background-image: url("images/lux-hotel-img-1.jpeg");
-  background-position: center bottom;
+  background-image: url("images/corp-hotel-img-1.jpg");
+  background-position: center top;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -903,10 +910,12 @@ text-align: center;
   .deco-img-div-holder-2 {
     height: 600px;
     background-position: center center;
+    background-size: cover;
   }
 
-  .deco-img-div-holder-2 {
+  .deco-img-div-holder-1 {
     height: 500px;
+    background-size: cover;
   }
   /* #half-scn-txt {
     display: none;
