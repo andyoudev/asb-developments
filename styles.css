@@ -542,6 +542,12 @@ text-align: center;
     height: 500px;
     background-size: cover;
   }
+
+  .deco-img-div-holder-3 {
+    height: 500px;
+    background-position: center center;
+    background-size: cover;
+  }
   /* #half-scn-txt {
     display: none;
   }
